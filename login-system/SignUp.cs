@@ -8,17 +8,11 @@ using System.Windows.Forms;
 
 namespace login_system
 {
-    public partial class LoginSystem : Form
+    public partial class SignUp : Form
     {
-        public LoginSystem()
+        public SignUp()
         {
             InitializeComponent();
-        }
-
-        private void OpenSignup(object sender, EventArgs e)
-        {
-            SignUp signUpForm = new SignUp();
-            signUpForm.Show();
         }
     }
 }
