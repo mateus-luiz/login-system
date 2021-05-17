@@ -47,6 +47,14 @@ namespace login_system
             try
             {
                 Account newAccount = new Account(user, email, password);
+
+                if(newAccount.CheckAccount() == true)
+                {
+                    MessageBox.Show("Already exist!");
+                    return;
+                }
+
+                newAccount.CreateAccount();
                 MessageBox.Show("Sucessfull created!");
                 ActiveForm.Close();
             }
