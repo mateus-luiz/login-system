@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace login_system.Forms
 {
-    public partial class Error : Form
+    public partial class Home : Form
     {
-        public Error()
+        public Home()
         {
             InitializeComponent();
         }

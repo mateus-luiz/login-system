@@ -97,6 +97,7 @@ namespace login_system
             this.btn_connect.TabIndex = 5;
             this.btn_connect.Text = "CONNECT";
             this.btn_connect.UseVisualStyleBackColor = true;
+            this.btn_connect.Click += new System.EventHandler(this.Login);
             // 
             // btn_signup
             // 

@@ -1,7 +1,7 @@
 ﻿
 namespace login_system.Forms
 {
-    partial class Error
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -30,36 +30,26 @@ namespace login_system.Forms
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.lbl_error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(97, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(83, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 15);
+            this.label1.Size = new System.Drawing.Size(161, 45);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Error";
+            this.label1.Text = "Wellcome";
             // 
-            // lbl_error
-            // 
-            this.lbl_error.AutoSize = true;
-            this.lbl_error.Location = new System.Drawing.Point(25, 44);
-            this.lbl_error.Name = "lbl_error";
-            this.lbl_error.Size = new System.Drawing.Size(175, 15);
-            this.lbl_error.TabIndex = 1;
-            this.lbl_error.Text = "Mensagem de error placeholder";
-            // 
-            // Error
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 106);
-            this.Controls.Add(this.lbl_error);
+            this.ClientSize = new System.Drawing.Size(319, 184);
             this.Controls.Add(this.label1);
-            this.Name = "Error";
-            this.Text = "Error";
+            this.Name = "Home";
+            this.Text = "Home";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,6 +58,5 @@ namespace login_system.Forms
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_error;
     }
 }
