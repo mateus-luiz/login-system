@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace login_system
+namespace login_system.Forms
 {
-    public partial class SignUp : Form
+    public partial class Error : Form
     {
-        public SignUp()
+        public Error()
         {
             InitializeComponent();
         }

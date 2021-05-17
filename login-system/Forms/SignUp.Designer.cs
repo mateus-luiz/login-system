@@ -37,6 +37,9 @@ namespace login_system
             this.textB_email = new System.Windows.Forms.TextBox();
             this.textB_password = new System.Windows.Forms.TextBox();
             this.textB_conPassword = new System.Windows.Forms.TextBox();
+            this.btn_signup = new System.Windows.Forms.Button();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -107,11 +110,46 @@ namespace login_system
             this.textB_conPassword.Size = new System.Drawing.Size(124, 23);
             this.textB_conPassword.TabIndex = 7;
             // 
+            // btn_signup
+            // 
+            this.btn_signup.Location = new System.Drawing.Point(173, 223);
+            this.btn_signup.Name = "btn_signup";
+            this.btn_signup.Size = new System.Drawing.Size(75, 23);
+            this.btn_signup.TabIndex = 8;
+            this.btn_signup.Text = "Sign Up";
+            this.btn_signup.UseVisualStyleBackColor = true;
+            this.btn_signup.Click += new System.EventHandler(this.SignupAccount);
+            // 
+            // lbl_email
+            // 
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.ForeColor = System.Drawing.Color.Red;
+            this.lbl_email.Location = new System.Drawing.Point(143, 103);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(105, 15);
+            this.lbl_email.TabIndex = 9;
+            this.lbl_email.Text = "Insert a valid email";
+            this.lbl_email.Visible = false;
+            // 
+            // lbl_password
+            // 
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.ForeColor = System.Drawing.Color.Red;
+            this.lbl_password.Location = new System.Drawing.Point(30, 249);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(107, 15);
+            this.lbl_password.TabIndex = 10;
+            this.lbl_password.Text = "Incorrect password";
+            this.lbl_password.Visible = false;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 451);
+            this.ClientSize = new System.Drawing.Size(268, 283);
+            this.Controls.Add(this.lbl_password);
+            this.Controls.Add(this.lbl_email);
+            this.Controls.Add(this.btn_signup);
             this.Controls.Add(this.textB_conPassword);
             this.Controls.Add(this.textB_password);
             this.Controls.Add(this.textB_email);
@@ -137,5 +175,8 @@ namespace login_system
         private System.Windows.Forms.TextBox textB_email;
         private System.Windows.Forms.TextBox textB_password;
         private System.Windows.Forms.TextBox textB_conPassword;
+        private System.Windows.Forms.Button btn_signup;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_password;
     }
 }

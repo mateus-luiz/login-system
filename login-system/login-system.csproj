@@ -5,7 +5,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>login_system</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <UserSecretsId>cc6062a7-8e53-44d9-bd7a-66d72b0b52e5</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.25" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
